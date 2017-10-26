@@ -1,4 +1,4 @@
-/*! Phiola, v0.0.0, https://github.com/RedKenrok/Phiola-Web, MIT License */
+/*! Phiola, https://github.com/RedKenrok/Phiola, MIT License */
 // Bluetooth object for interacting with the bluetooth device.
 
 var bluetooth = {};

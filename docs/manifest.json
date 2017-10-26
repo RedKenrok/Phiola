@@ -36,10 +36,6 @@
 			"src": "images/icons/256x256.png",
 			"type": "image/png",
 			"sizes": "256x256"
-  		}, {
-			"src": "images/icons/512x512.png",
-			"type": "image/png",
-			"sizes": "512x512"
   		}
 	],
 	

@@ -49,11 +49,13 @@
 		</nav>
 		<!-- Content -->
 		<div class="content">
-			<!-- Button Controls -->
-			<button onclick="phiola.onStart()">Start</button>
-			<button onclick="phiola.onStop()">Stop</button>
-			<button onclick="phiola.onReset()">Reset</button>
-			<button onclick="phiola.onNormalize()">Normalize</button>
+			<!-- Controls -->
+			<div>
+				<button onclick="phiola.onStart()">Start</button>
+				<button onclick="phiola.onStop()">Stop</button>
+				<button onclick="phiola.onReset()">Reset</button>
+				<button onclick="phiola.onNormalize()">Normalize</button>	
+			</div>
 			
 			<!-- Configuration -->
 			<h1>Configuration</h1>
@@ -108,6 +110,6 @@
 			$(document).ready(function() {
 				phiola.initialize();
 			});
-			</script>
+		</script>
 	</body>
 </html>
