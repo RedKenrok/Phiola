@@ -1,0 +1,52 @@
+{
+	"url": "phiola.rondekker.nl",
+	"start_url": "index.html",
+	
+	"name": "Phiola",
+	"short_name": "Phiola",
+	"description": "A digital synthesizer.",
+	
+	"dir": "ltr",
+	"lang": "en-GB",
+	
+	"background_color": "#ffffff",
+	"theme_color": "#f44336",
+	
+	"display": "standalone",
+	"orientation": "portrait",
+	
+	"icons": [
+		{
+			"src": "images/icons/16x16.png",
+			"type": "image/png",
+			"sizes": "16x16"
+  		}, {
+			"src": "images/icons/32x32.png",
+			"type": "image/png",
+			"sizes": "32x32"
+  		}, {
+			"src": "images/icons/64x64.png",
+			"type": "image/png",
+			"sizes": "64x64"
+  		}, {
+			"src": "images/icons/128x128.png",
+			"type": "image/png",
+			"sizes": "128x128"
+  		}, {
+			"src": "images/icons/256x256.png",
+			"type": "image/png",
+			"sizes": "256x256"
+  		}, {
+			"src": "images/icons/512x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+  		}
+	],
+	
+	"prefer_related_applications": false,
+	"related_applications": [
+		{
+			"platform": "web"
+		}
+	]
+}

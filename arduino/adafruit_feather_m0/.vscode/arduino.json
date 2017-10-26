@@ -1,0 +1,5 @@
+{
+    "board": "adafruit:samd:adafruit_feather_m0",
+    "sketch": "Phiola-Arduino.ino",
+    "port": "COM3"
+}

@@ -1,0 +1,18 @@
+/* TEAM */
+	Designer, developer: Ron Dekker
+	Site: www.RonDekker.nl
+	Location: Groningen, The Netherlands
+
+/* CONTRIBUTORS */
+	
+
+/* THANKS */
+	Inspiration: Collin Morris
+	Site: colinmorris.github.io
+	GitHub: colinmorris
+	Project: SongSim
+
+/* SITE */
+	Standards: HTML5, CSS3, JavaScript
+	Components: jQuery, normalize.css
+	Software: Visual Studio Code, Git, GitHub Pages

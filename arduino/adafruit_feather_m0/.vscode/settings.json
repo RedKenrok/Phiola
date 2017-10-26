@@ -1,0 +1,6 @@
+{
+    "arduino.path": "D:/Programs/Arduino-1.8.2",
+    "arduino.additionalUrls": "https://adafruit.github.io/arduino-board-index/package_adafruit_index.json",
+    "arduino.autoUpdateIndexFiles": false,
+    "arduino.logLevel": "info"
+}
