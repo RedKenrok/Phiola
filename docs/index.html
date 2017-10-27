@@ -6,7 +6,7 @@
 		
 		<title>Phiola</title>
 		<meta name="keywords" content="Phiola"/>
-		<meta name="description" content="A digital synthesizer."/>
+		<meta name="description" content="A digital synthesizer using a microcontroller, smartphone, and the web."/>
 		<meta name="author" content="Ron Dekker"/>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,8 +55,7 @@
 				<button onclick="phiola.onReset()">Reset</button>
 				<button onclick="phiola.onNormalize()">Normalize</button>	
 			</div>
-			
-			<!-- Configuration -->
+			<!-- Configurate synthesizer -->
 			<h1>Configuration</h1>
 			<div>
 				<h2>Synthesizer</h2>
@@ -66,10 +65,10 @@
 				<h2>Input</h2>
 				<textarea id="configurationInput" onChange="phiola.onConfigureInput(this.value)"></textarea>
 			</div>
-			
+			<!-- Display input data -->
 			<h1>Input data</h1>
 			<div>
-				<h4h2>Microcontroller</h2>
+				<h2>Microcontroller</h2>
 				<p id='connectedMicrocontroller'>Name</p>
 				<p id='characteristicBattery'>Battery</p>
 				<p id='characteristicPotentiometer'>Potentiometer</p>
@@ -80,9 +79,8 @@
 				<p id='deviceMotion'>Motion</p>
 				<!-- Not yet implemented
 				<p id='deviceLocation'>Uninitialized</p>
-				-->
+				 -->
 			</div>
-			
 			<!-- Footer -->
 			<footer>
 				<a href="/humans.txt" target="_blank">humans.txt</a>

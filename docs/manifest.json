@@ -4,7 +4,7 @@
 	
 	"name": "Phiola",
 	"short_name": "Phiola",
-	"description": "A digital synthesizer.",
+	"description": "A digital synthesizer using a microcontroller, smartphone, and the web.",
 	
 	"dir": "ltr",
 	"lang": "en-GB",
@@ -17,23 +17,23 @@
 	
 	"icons": [
 		{
-			"src": "images/icons/16x16.png",
+			"src": "images/icons/16.png",
 			"type": "image/png",
 			"sizes": "16x16"
   		}, {
-			"src": "images/icons/32x32.png",
+			"src": "images/icons/32.png",
 			"type": "image/png",
 			"sizes": "32x32"
   		}, {
-			"src": "images/icons/64x64.png",
+			"src": "images/icons/64.png",
 			"type": "image/png",
 			"sizes": "64x64"
   		}, {
-			"src": "images/icons/128x128.png",
+			"src": "images/icons/128.png",
 			"type": "image/png",
 			"sizes": "128x128"
   		}, {
-			"src": "images/icons/256x256.png",
+			"src": "images/icons/256.png",
 			"type": "image/png",
 			"sizes": "256x256"
   		}
