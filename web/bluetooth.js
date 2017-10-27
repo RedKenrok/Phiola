@@ -1,7 +1,7 @@
 /*! Phiola, https://github.com/RedKenrok/Phiola, MIT License */
 // Bluetooth object for interacting with the bluetooth device.
 
-var bluetooth = {};
+let bluetooth = {};
 
 (function() {
 	

@@ -161,7 +161,10 @@ footer {
 	user-select: none;
 }
 footer a {
-	color: var(--grey-dark);
+	color: var(--grey);
 	font-weight: inherit;
 	text-decoration: overline;
+}
+footer a:hover {
+	color: var(--grey-dark);
 }

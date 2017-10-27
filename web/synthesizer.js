@@ -1,7 +1,7 @@
 /*! Phiola, https://github.com/RedKenrok/Phiola, MIT License */
 // Synthesizer object for interacting with the flocking synths.
 
-var synthesizer = {};
+let synthesizer = {};
 
 (function() {
 	

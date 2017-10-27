@@ -1,7 +1,7 @@
 /*! Phiola, https://github.com/RedKenrok/Phiola, MIT License */
 // Phiola object for connecting all the instrument's individual parts and performing the interactions between them.
 
-var phiola = {};
+let phiola = {};
 
 (function() {
 	

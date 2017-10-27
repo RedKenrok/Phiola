@@ -1,7 +1,7 @@
 /*! Phiola, https://github.com/RedKenrok/Phiola, MIT License */
 // Static mathematics namespace for generic calulations.
 
-var math = {};
+let math = {};
 
 (function() {
 	
