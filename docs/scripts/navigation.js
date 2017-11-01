@@ -1,4 +1,3 @@
-/*! Enable Smooth Scrolling, By Chris Coyier from CSS-Tricks.com, Contributors Ron Dekker */
 'use strict';
 $(document).ready(function() {
 	// Get the navigation bars height to offset with.
