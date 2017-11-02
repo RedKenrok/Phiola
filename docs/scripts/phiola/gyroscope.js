@@ -1,5 +1,5 @@
 /*! Phiola, https://github.com/RedKenrok/Phiola, MIT License */
-// Static mathematics namespace for generic calulations.
+// Retrieves device orientation data and dispatches events accordingly.
 
 let gyroscope = {};
 
