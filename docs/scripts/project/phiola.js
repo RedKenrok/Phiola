@@ -432,3 +432,7 @@ let phiola = {};
 		return value;
 	}
 }());
+
+$(document).ready(function() {
+	phiola.initialize();
+});

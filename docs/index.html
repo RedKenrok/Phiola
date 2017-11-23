@@ -20,21 +20,33 @@
 		<link rel="icon" type="image/png" href="images/icons/256.png" sizes="256x256"/>
 		
 		<!-- Stylesheets -->
-		<link rel="stylesheet" href="styles/normalize.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro:300,700">
-		<link rel="stylesheet" href="styles/project.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+		<link rel="stylesheet" href="styles/flexboxgrid2.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+		<link rel="stylesheet" href="styles/space.css">
+		<link rel="stylesheet" href="styles/custom.css">
 		<style>
 			body {
 				font-family: 'Open Sans', sans-serif;
-			}
-			a {
-				font-family: 'Source Code Pro', monospace;
 			}
 		</style>
 		
 		<!-- Progressive Web App -->
 		<link rel='manifest' href='manifest.json'>
-		<script async src="serviceWorker.js"></script>
+		<script>
+			if ('serviceWorker' in navigator) {
+				// Register service worker.
+				navigator.serviceWorker
+					.register('serviceWorker.js', { scope: '/' })
+					.then(
+						function(registration) {
+							console.log('ServiceWorker registration successful with scope: ', registration.scope);
+						},
+						function(error) {
+							console.log('ServiceWorker registration failed: ', error);
+						});
+			}
+		</script>
 	</head>
 	<body>
 		<!-- Navigation -->
@@ -46,40 +58,48 @@
 				<div class="gradient"></div>
 			</div>
 		</nav>
-		<!-- Content -->
-		<div class="content">
+		<!-- Main -->
+		<div class="container">
 			<!-- Controls -->
-			<div>
-				<button onclick="phiola.onStart()">Start</button>
-				<button onclick="phiola.onStop()">Stop</button>
-				<button onclick="phiola.onReset()">Reset</button>
-				<button onclick="phiola.onNormalize()">Normalize</button>	
+			<div class="row middle-xs" id="controls">
+				<button class="col-xs-6 col-md-3" onclick="phiola.onStart()">Start</button>
+				<button class="col-xs-6 col-md-3" onclick="phiola.onStop()">Stop</button>
+				<button class="col-xs-6 col-md-3" onclick="phiola.onReset()">Reset</button>
+				<button class="col-xs-6 col-md-3" onclick="phiola.onNormalize()">Normalize</button>
 			</div>
 			<!-- Configurate synthesizer -->
-			<h1>Configuration</h1>
-			<div>
-				<h2>Synthesizer</h2>
-				<textarea id="configurationSynthesizer" onChange="phiola.onConfigureSynthesizer(this.value)"></textarea>
-			</div>
-			<div>
-				<h2>Input</h2>
-				<textarea id="configurationInput" onChange="phiola.onConfigureInput(this.value)"></textarea>
+			<div class="row middle-xs" id="configuration">
+				<div class="col-xs-12">
+					<h1>Configuration</h1>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h2>Synthesizer</h2>
+					<textarea id="configurationSynthesizer" onChange="phiola.onConfigureSynthesizer(this.value)"></textarea>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h2>Input</h2>
+					<textarea id="configurationInput" onChange="phiola.onConfigureInput(this.value)"></textarea>
+				</div>
 			</div>
 			<!-- Display input data -->
-			<h1>Input data</h1>
-			<div>
-				<h2>Microcontroller</h2>
-				<p id='connectedMicrocontroller'>Name</p>
-				<p id='characteristicBattery'>Battery</p>
-				<p id='characteristicPotentiometer'>Potentiometer</p>
-			</div>
-			<div>
-				<h2>Mobile device</h2>
-				<p id='deviceOrientation'>Orientation</p>
-				<p id='deviceMotion'>Motion</p>
-				<!-- Not yet implemented
-				<p id='deviceLocation'>Uninitialized</p>
-				 -->
+			<div class="row middle-xs" id="input-data">
+				<div class="col-xs-12">
+					<h1>Input data</h1>
+				</div>
+				<div class="col-xs-6">
+					<h2>Microcontroller</h2>
+					<p id='connectedMicrocontroller'>Name</p>
+					<p id='characteristicBattery'>Battery</p>
+					<p id='characteristicPotentiometer'>Potentiometer</p>
+				</div>
+				<div class="col-xs-6">
+					<h2>Mobile device</h2>
+					<p id='deviceOrientation'>Orientation</p>
+					<p id='deviceMotion'>Motion</p>
+					<!-- Not yet implemented
+					<p id='deviceLocation'>Uninitialized</p>
+						-->
+				</div>
 			</div>
 			<!-- Footer -->
 			<footer>
@@ -103,10 +123,5 @@
         <script src='scripts/phiola/math.js'></script>
         <script src='scripts/phiola/synthesizer.js'></script>
         <script src='scripts/phiola/phiola.js'></script>
-		<script>
-			$(document).ready(function() {
-				phiola.initialize();
-			});
-		</script>
 	</body>
 </html>
