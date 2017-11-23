@@ -60,15 +60,12 @@
 		</nav>
 		<!-- Main -->
 		<div class="container">
-			<!-- Controls -->
-			<div class="row middle-xs" id="controls">
+			<div class="row top-xs">
+				<!-- Controls -->
 				<button class="col-xs-6 col-md-3" onclick="phiola.onStart()">Start</button>
 				<button class="col-xs-6 col-md-3" onclick="phiola.onStop()">Stop</button>
 				<button class="col-xs-6 col-md-3" onclick="phiola.onReset()">Reset</button>
 				<button class="col-xs-6 col-md-3" onclick="phiola.onNormalize()">Normalize</button>
-			</div>
-			<!-- Configurate synthesizer -->
-			<div class="row middle-xs" id="configuration">
 				<div class="col-xs-12">
 					<h1>Configuration</h1>
 				</div>
@@ -80,19 +77,16 @@
 					<h2>Input</h2>
 					<textarea id="configurationInput" onChange="phiola.onConfigureInput(this.value)"></textarea>
 				</div>
-			</div>
-			<!-- Display input data -->
-			<div class="row middle-xs" id="input-data">
 				<div class="col-xs-12">
 					<h1>Input data</h1>
 				</div>
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-sm-6">
 					<h2>Microcontroller</h2>
 					<p id='connectedMicrocontroller'>Name</p>
 					<p id='characteristicBattery'>Battery</p>
 					<p id='characteristicPotentiometer'>Potentiometer</p>
 				</div>
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-sm-6">
 					<h2>Mobile device</h2>
 					<p id='deviceOrientation'>Orientation</p>
 					<p id='deviceMotion'>Motion</p>
@@ -113,15 +107,15 @@
 		<script async src="scripts/navigation.js"></script>
 		<!-- Phiola -->
         <!-- Device input libraries -->
-        <script src='scripts/phiola/lib/fulltilt.min.js'></script>
-        <script src='scripts/phiola/lib/gyronorm.min.js'></script>
+        <script src='scripts/project/libs/fulltilt.min.js'></script>
+        <script src='scripts/project/libs/gyronorm.min.js'></script>
         <!-- Synthesizer library -->
-        <script src='scripts/phiola/lib/flocking.min.js'></script>
+        <script src='scripts/project/libs/flocking.min.js'></script>
         <!-- Phiola scripts -->
-        <script src='scripts/phiola/bluetooth.js'></script>
-        <script src='scripts/phiola/gyroscope.js'></script>
-        <script src='scripts/phiola/math.js'></script>
-        <script src='scripts/phiola/synthesizer.js'></script>
-        <script src='scripts/phiola/phiola.js'></script>
+        <script src='scripts/project/bluetooth.js'></script>
+        <script src='scripts/project/gyroscope.js'></script>
+        <script src='scripts/project/math.js'></script>
+        <script src='scripts/project/synthesizer.js'></script>
+        <script src='scripts/project/phiola.js'></script>
 	</body>
 </html>

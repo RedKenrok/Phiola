@@ -161,9 +161,6 @@ nav.navigation > .content > .gradient {
 	padding: 0 var(--column-padding) 0 0;
 	margin-bottom: var(--column-padding);
 }
-.container .row [class*="col-"]:last-child {
-	margin-bottom: 0;
-}
 body > .container > .row {
 	min-height: calc(100vh - var(--navigation-height));
 }
